@@ -1,28 +1,36 @@
 {
-  "name": "mrel",
+  "name": "relez",
   "version": "1.0.0",
   "description": "I just help to manage releases",
   "main": "bin/index.js",
   "bin": {
-    "mrel": "bin/index.js"
+    "relez": "bin/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/traczewskim/release-manager.git"
+    "url": "git+https://github.com/traczewskim/relmgr.git"
   },
   "author": "Michal Traczewski",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/traczewskim/release-manager/issues"
+    "url": "https://github.com/traczewskim/relmgr/issues"
   },
-  "homepage": "https://github.com/traczewskim/release-manager#readme",
+  "homepage": "https://github.com/traczewskim/relmgr#readme",
   "dependencies": {
     "commander": "^12.0.0",
     "dotenv": "^16.4.4",
     "fs": "0.0.1-security",
     "prompts": "^2.4.2"
-  }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": [
+    "release",
+    "manager"
+  ],
+  "devDependencies": {}
 }

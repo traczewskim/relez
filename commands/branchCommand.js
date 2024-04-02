@@ -1,5 +1,5 @@
 // Import required modules
-const config = require('../lib/config').read();
+const { read: readConfig } = require('../lib/config');
 const tagManager = require('../lib/tagManager');
 const branchManager = require('../lib/branchManager');
 const validator = require('../lib/validator');
@@ -7,10 +7,12 @@ const helper = require('../lib/helper');
 const prManager = require('../lib/prManager');
 
 // Define functions for commands
-const createBranchCommand = (type, { tag }) => {
+const createBranchCommand = async (type, { tag }) => {
     try {
         // Validate release type
         validator.validateType(type);
+
+        const config = readConfig();
 
         // Find latest tag
         tag = tag || tagManager.findLatestTag(tagManager.getAllTags(config.owner, config.repository));
@@ -22,7 +24,7 @@ const createBranchCommand = (type, { tag }) => {
         console.log('### Release version: ', newVersion);
 
         // Create release branch
-        branchManager.create(`release/${newVersion}`, tag);
+        await branchManager.create(`release/${newVersion}`, tag);
     } catch (error) {
         console.error('### Error:', error.message);
         process.exit(1);
