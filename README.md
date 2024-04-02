@@ -61,20 +61,25 @@ To use the Configuration Wizard CLI, you need to have Node.js installed on your 
 To create a release branch with a specified tag:
 
 ```bash
-./cli.js create release <type> --tag <tag>
+relez create release <type> --tag <tag>
 ```
 
 To create a pull request for a specific branch:
 
 ```bash
-./cli.js create pr <branch> [target]
+relez create pr <branch> [target]
 ```
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
 Feel free to customize the content as per your project requirements and add additional sections like Installation,
 Usage, License, etc., based on your project's needs.
+
+
+## Disclaimer
+
+This project is provided "as is," without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.
+
+Use this project at your own risk. The authors and contributors of this project disclaim all liability for any damages or losses, direct or indirect, that may arise from your use or inability to use the project or any part thereof, including but not limited to any loss of business, revenue, profits, or data, even if advised of the possibility of such damages.
+
+By using this project, you agree to indemnify and hold harmless the authors and contributors from any claims, damages, losses, liabilities, costs, and expenses, including attorney's fees, arising from your use of the project or your violation of these terms.
