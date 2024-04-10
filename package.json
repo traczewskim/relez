@@ -1,6 +1,6 @@
 {
   "name": "relez",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "I just help to manage releases",
   "main": "bin/index.js",
   "bin": {
