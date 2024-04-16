@@ -1,6 +1,6 @@
 {
   "name": "relez",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "I just help to manage releases",
   "main": "bin/index.js",
   "bin": {
@@ -16,9 +16,9 @@
   "author": "Michal Traczewski",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/traczewskim/relmgr/issues"
+    "url": "https://github.com/traczewskim/relez/issues"
   },
-  "homepage": "https://github.com/traczewskim/relmgr#readme",
+  "homepage": "https://github.com/traczewskim/relez#readme",
   "dependencies": {
     "commander": "^12.0.0",
     "dotenv": "^16.4.4",

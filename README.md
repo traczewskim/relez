@@ -1,4 +1,4 @@
-# Configuration Wizard CLI
+# About
 
 This CLI tool provides a configuration wizard for setting up owner and allowed repositories on GitHub.
 
